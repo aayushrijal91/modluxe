@@ -317,7 +317,7 @@
 </section>
 
 <section class="quick-contact d-none d-md-block">
-    <div class="container-fluid px-xl-0">
+    <div class="container-fluid px-xxl-0">
         <div class="row align-items-center">
             <div class="col-6 col-lg-8 col-xl-9">
                 <div class="gradient-divider"></div>
@@ -410,7 +410,7 @@
                 <div class="font-playlist fs-29 text-gradient">The perfect blend of modern and luxury</div>
             </div>
             <div class="col-11 col-md-auto">
-                <div class="row gx-2 gx-md-3 gx-xl-5 justify-content-between justify-content-md-center align-items-center">
+                <div class="row gx-2 gx-md-3 gx-xxl-5 justify-content-between justify-content-md-center align-items-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto text-primary">|</div>
                     <div class="col-auto text-center">All Rights Reserved</div>
