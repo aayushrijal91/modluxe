@@ -1,8 +1,8 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Website Name";
-$phone_number = "0432 406 340";
+$site = "Modluxe Bathrooms";
+$phone_number = "1300 011 139";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';

@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"],a[href="#about"],a[href="#portfolio"],a[href="#team"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -9,6 +9,14 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
         });
     });
 });
+
+$(() => {
+    $('.portfolio-slider').slick({
+        slidesToShow:1,
+        variableWidth: true,
+        dots: true,
+    });
+})
 
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {

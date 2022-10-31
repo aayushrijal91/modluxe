@@ -7,16 +7,24 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background: $black;
+    color: $white;
+}
+
+a {
+    color: $white;
 }
 
 .btn {
-    height: 48px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
+    font-family: $font-inter;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 500;
+    color: $white;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.875rem;
@@ -34,6 +42,14 @@ body {
 
 .text-decoration-none {
     text-decoration: none;
+}
+
+.text-gradient {
+    background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 //line-height
