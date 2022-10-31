@@ -36,6 +36,22 @@ a {
     }
 }
 
+.btn-gradient {
+    background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
+}
+
+.white-divider {
+    width: 100%;
+    height: 1px;
+    background-color: $white;
+}
+
+.gradient-divider {
+    background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
+    width: 100%;
+    height: 1px;
+}
+
 .text-italic {
     font-style: italic;
 }

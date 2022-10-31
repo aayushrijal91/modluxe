@@ -1,19 +1,63 @@
 <header>
     <div class="navigation-bar">
         <div class="container">
-            <div class="row justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-auto">
+            <div class="row justify-content-center justify-content-lg-between align-items-center gx-2 gy-3">
+                <div class="col-12 d-md-none">
+                    <div class="row justify-content-center justify-content-lg-end align-items-center gx-0">
+                        <div class="col-auto">
+                            <a href="#form" class="btn border-white rounded-pill">
+                                Book A Consultation
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="white-divider"></div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn border-white rounded-pill">
+                                <div class="row gx-2">
+                                    <div class="col-auto">
+                                        <a href="tel:<?= $phone_number ?>" class="text-decoration-none fs-14 fw-800 font-inter">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6072 9.10592L8.59315 8.21121C8.38389 8.11763 8.14952 8.09596 7.92665 8.1496C7.70377 8.20324 7.50493 8.32917 7.36117 8.50772L6.78075 9.23342C5.82919 8.62281 5.01916 7.81582 4.40499 6.86655L5.13069 6.28614C5.30908 6.14242 5.4349 5.94371 5.48853 5.72099C5.54217 5.49828 5.5206 5.26407 5.4272 5.0549L4.53916 3.03569C4.43937 2.81084 4.26296 2.62876 4.04138 2.52191C3.81981 2.41506 3.56749 2.3904 3.32941 2.45231L1.6245 2.89707C1.37716 2.96107 1.16211 3.11406 1.02055 3.32674C0.878987 3.53943 0.820856 3.79686 0.857288 4.04974C1.17488 6.25484 2.19813 8.29777 3.77386 9.8727C5.3496 11.4476 7.39304 12.4698 9.59831 12.7863C9.85104 12.8221 10.1081 12.7635 10.3203 12.6217C10.5326 12.4799 10.6851 12.2648 10.7488 12.0176L11.1935 10.3127C11.2554 10.0747 11.2303 9.82241 11.1228 9.60121C11.0154 9.38001 10.8325 9.20439 10.6072 9.10592Z" fill="white" />
+                                                <path d="M9.74261 0.936407C9.24312 0.935498 8.75152 1.06101 8.3136 1.30125C7.87568 1.5415 7.50567 1.88866 7.23805 2.3104C6.97043 2.73215 6.81388 3.21476 6.78301 3.7133C6.75213 4.21184 6.84791 4.71008 7.06145 5.16163L6.77754 6.86654L8.48246 6.58264C8.88461 6.77254 9.32434 6.86955 9.76907 6.86647C10.2138 6.86339 10.6521 6.7603 11.0516 6.56485C11.4511 6.3694 11.8015 6.08658 12.0769 5.73734C12.3523 5.38811 12.5455 4.9814 12.6424 4.54734C12.7393 4.11328 12.7373 3.66298 12.6365 3.2298C12.5358 2.79663 12.3389 2.39166 12.0604 2.04489C11.7819 1.69813 11.429 1.41845 11.0278 1.22657C10.6266 1.03469 10.1873 0.935518 9.74261 0.936407Z" fill="white" />
+                                            </svg>
+
+                                            <span class="ps-1"><?= $phone_number ?></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#">
+                                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.4613 12.4184L2.44458 7.31366H0.256836V5.12592H2.44458V3.66742C2.44458 1.69903 3.66353 0.750427 5.41946 0.750427C6.26057 0.750427 6.98347 0.813048 7.19413 0.841036V2.89811L5.9763 2.89867C5.02133 2.89867 4.83642 3.35246 4.83642 4.01836V5.12592H7.54932L6.82007 7.31366H4.83641V12.4184H2.4613Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.79102 1.80127C8.34869 1.80127 8.53319 1.80784 9.14868 1.83555C9.51853 1.83999 9.88486 1.90808 10.2316 2.03682C10.4852 2.13051 10.7145 2.28005 10.9025 2.47437C11.0968 2.66236 11.2464 2.89166 11.3401 3.14528C11.4688 3.49203 11.5369 3.85836 11.5413 4.22821C11.5691 4.8437 11.5756 5.03039 11.5756 6.58587C11.5756 8.14136 11.5691 8.32805 11.5413 8.94353C11.5369 9.31339 11.4688 9.67971 11.3401 10.0265C11.2432 10.2781 11.0947 10.5067 10.904 10.6974C10.7133 10.8881 10.4847 11.0366 10.2331 11.1335C9.88632 11.2622 9.51999 11.3303 9.15014 11.3347C8.53465 11.3624 8.34796 11.369 6.79248 11.369C5.23699 11.369 5.0503 11.3624 4.43482 11.3347C4.06496 11.3303 3.69863 11.2622 3.35188 11.1335C3.09826 11.0398 2.86897 10.8902 2.68097 10.6959C2.48666 10.5079 2.33712 10.2786 2.24343 10.025C2.11468 9.67825 2.0466 9.31193 2.04215 8.94207C2.01444 8.32659 2.00788 8.1399 2.00788 6.58441C2.00788 5.02893 2.01444 4.84224 2.04215 4.22675C2.0466 3.8569 2.11468 3.49057 2.24343 3.14382C2.33712 2.8902 2.48666 2.66091 2.68097 2.47291C2.86897 2.2786 3.09826 2.12906 3.35188 2.03536C3.69863 1.90662 4.06496 1.83853 4.43482 1.83409C5.0503 1.80638 5.23699 1.79982 6.79248 1.79982L6.79102 1.80127ZM6.79102 0.750427C5.20636 0.750427 5.00801 0.75699 4.3845 0.785431C3.90098 0.795264 3.42262 0.88699 2.96976 1.05671C2.58031 1.20297 2.22761 1.43271 1.93641 1.72981C1.63932 2.021 1.40957 2.37371 1.26332 2.76315C1.09359 3.21602 1.00187 3.69437 0.992035 4.17789C0.963594 4.8014 0.957031 4.99976 0.957031 6.58441C0.957031 8.16907 0.963594 8.36742 0.992035 8.99093C1.00187 9.47445 1.09359 9.95281 1.26332 10.4057C1.40957 10.7951 1.63932 11.1478 1.93641 11.439C2.22761 11.7361 2.58031 11.9659 2.96976 12.1121C3.42308 12.282 3.90194 12.3737 4.38596 12.3834C5.00801 12.4118 5.20636 12.4184 6.79102 12.4184C8.37567 12.4184 8.57403 12.4118 9.19754 12.3834C9.68155 12.3737 10.1604 12.282 10.6137 12.1121C11.0013 11.9621 11.3532 11.7328 11.6471 11.439C11.9409 11.1452 12.1702 10.7932 12.3202 10.4057C12.4901 9.95235 12.5818 9.47349 12.5915 8.98947C12.6199 8.36743 12.6265 8.16907 12.6265 6.58295C12.6265 4.99684 12.6199 4.79994 12.5915 4.17644C12.581 3.69332 12.4888 3.21547 12.3187 2.76315C12.1725 2.37371 11.9427 2.021 11.6456 1.72981C11.3544 1.43271 11.0017 1.20297 10.6123 1.05671C10.1594 0.88699 9.68106 0.795264 9.19754 0.785431C8.57403 0.75699 8.37567 0.750427 6.79102 0.750427Z" fill="white" />
+                                                <path d="M6.79102 3.58866C6.19851 3.58866 5.61932 3.76436 5.12667 4.09354C4.63402 4.42271 4.25005 4.89059 4.0233 5.43799C3.79656 5.98539 3.73724 6.58774 3.85283 7.16886C3.96842 7.74997 4.25374 8.28377 4.6727 8.70273C5.09166 9.12169 5.62546 9.40701 6.20658 9.5226C6.78769 9.63819 7.39004 9.57887 7.93744 9.35213C8.48484 9.12539 8.95272 8.74141 9.28189 8.24876C9.61107 7.75611 9.78677 7.17692 9.78677 6.58441C9.78677 6.19101 9.70928 5.80145 9.55873 5.43799C9.40818 5.07453 9.18752 4.74428 8.90933 4.4661C8.63115 4.18792 8.3009 3.96725 7.93744 3.8167C7.57398 3.66615 7.18443 3.58866 6.79102 3.58866ZM6.79102 8.52932C6.40635 8.52932 6.03032 8.41525 5.71049 8.20154C5.39065 7.98783 5.14136 7.68408 4.99416 7.3287C4.84695 6.97331 4.80844 6.58226 4.88348 6.20498C4.95853 5.82771 5.14376 5.48116 5.41576 5.20916C5.68776 4.93716 6.03431 4.75192 6.41159 4.67688C6.78886 4.60183 7.17992 4.64035 7.5353 4.78756C7.89069 4.93476 8.19444 5.18404 8.40815 5.50388C8.62186 5.82372 8.73592 6.19975 8.73592 6.58441C8.73592 7.10023 8.53101 7.59493 8.16627 7.95967C7.80153 8.32441 7.30684 8.52932 6.79102 8.52932Z" fill="white" />
+                                                <path d="M9.90491 4.1706C10.2916 4.1706 10.605 3.85717 10.605 3.47052C10.605 3.08388 10.2916 2.77044 9.90491 2.77044C9.51827 2.77044 9.20483 3.08388 9.20483 3.47052C9.20483 3.85717 9.51827 4.1706 9.90491 4.1706Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto text-center">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
                 </div>
                 <div class="col">
-                    <div class="horizontal-line"></div>
+                    <div class="white-divider"></div>
                 </div>
                 <div class="col-auto">
-                    <div class="row gx-xl-5">
+                    <div class="row gx-2 gx-xl-5">
                         <div class="col-auto">
-                            <a href="#about" class="btn px-0">About Modluxe</a>
+                            <a href="#about" class="btn px-0">About <span class="d-none d-md-block ps-1">Modluxe</span></a>
                         </div>
                         <div class="col-auto">
                             <a href="#portfolio" class="btn px-0">Our Portfolio</a>
@@ -24,9 +68,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="horizontal-line"></div>
+                    <div class="white-divider"></div>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-none d-md-block">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-3">
                         <div class="col-6 col-md-auto">
                             <a href="#form" class="btn border-white rounded-pill px-4">
@@ -68,51 +112,70 @@
 
     <div class="banner">
         <div class="container">
-            <div class="row justify-content-center align-items-center gy-4">
+            <div class="row justify-content-center align-items-center gy-3 gy-md-4">
                 <div class="col-12 fs-60 font-playlist text-gradient">
                     Style + Function + Quality
                 </div>
-                <div class="col-xl-9 fs-86 lh-1 fw-200">
+                <div class="col-xl-9 hero_heading fs-86 lh-1 fw-200">
                     <span class="text-gradient">Sydney's Leading</span> Bathroom Renovation Specialsts
                 </div>
-                <div class="col-12 fs-26 fw-200">
+                <div class="col-10 col-md-12 sub_heading fs-26 fw-200">
                     A team that delivers unparalleled and unmatched quality
+                </div>
+                <div class="col-auto d-md-none">
+                    <a href="#form" class="btn btn-gradient border-0 rounded-pill px-4">
+                        <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32.7343 6.87102C33.0305 6.57483 33.0305 6.09461 32.7343 5.79841L27.9076 0.971697C27.6114 0.675505 27.1312 0.675505 26.835 0.971697C26.5388 1.26789 26.5388 1.74811 26.835 2.0443L31.1254 6.33472L26.835 10.6251C26.5388 10.9213 26.5388 11.4015 26.835 11.6977C27.1312 11.9939 27.6114 11.9939 27.9076 11.6977L32.7343 6.87102ZM0.693359 7.09316L32.198 7.09316V5.57627L0.693359 5.57627L0.693359 7.09316Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="specialise">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-lg-6 text-center">
+                    <div class="font-playlist text-gradient fs-40">Services we specialise in</div>
+                    <div class="px-3 px-md-0">
+                        Bathroom Renovation
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        New Bathroom Builds
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        Commercial Bathroom Works
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        Bathroom Retreats
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="font-playlist text-gradient fs-40">Styles we love but not limited to</div>
+                    <div class="px-4 px-md-0">
+                        The Classic Bathroom
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        The Modern Bathroom
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        The designer bathroom
+                        <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
+                            </svg></span>
+                        The traditional bathroom
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
-<section class="specialise">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 text-center">
-                <div class="font-playlist text-gradient fs-40">Services we specialise in</div>
-                <div class="d-flex align-items-center justify-content-center fw-300">
-                    <div>Bathroom Renovation</div>
-                    <div class="dot"></div>
-                    <div>New Bathroom Builds</div>
-                    <div class="dot"></div>
-                    <div>Commercial Bathroom Works</div>
-                    <div class="dot"></div>
-                    <div>Bathroom Retreats</div>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center">
-                <div class="font-playlist text-gradient fs-40">Styles we love but not limited to</div>
-                <div class="d-flex align-items-center justify-content-center fw-300">
-                    <div>The Classic Bathroom</div>
-                    <div class="dot"></div>
-                    <div>The Modern Bathroom</div>
-                    <div class="dot"></div>
-                    <div>The designer bathroom</div>
-                    <div class="dot"></div>
-                    <div>The traditional bathroom</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <div class="gradient-divider"></div>
 
 <section class="about" id="about">
@@ -253,7 +316,7 @@
 </section>
 
 <section class="quick-contact">
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-lg-0">
         <div class="row align-items-center">
             <div class="col-9">
                 <div class="gradient-divider"></div>
