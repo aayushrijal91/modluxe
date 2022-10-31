@@ -18,6 +18,10 @@ header {
         text-align: center;
         padding: 176px 0 266px;
 
+        @include media-breakpoint-down(lg) {
+            padding: 76px 0;
+        }
+
         @include media-breakpoint-down(sm) {
             padding: 55px 0;
 
@@ -69,7 +73,7 @@ section.portfolio {
         background: rgba(19, 19, 19, 0.74);
 
         
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             padding: 17px 12px
         }
 
@@ -146,7 +150,7 @@ section.team {
         height: 100%;
         line-height: 1.66;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             padding: 0 17px 37px;
         }
 

@@ -2,7 +2,7 @@
     <div class="navigation-bar">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center gx-2 gy-3">
-                <div class="col-12 d-md-none">
+                <div class="col-12 d-lg-none">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-0">
                         <div class="col-auto">
                             <a href="#form" class="btn border-white rounded-pill">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-auto text-center">
+                <div class="col-12 col-lg-auto text-center">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
@@ -55,7 +55,7 @@
                     <div class="white-divider"></div>
                 </div>
                 <div class="col-auto">
-                    <div class="row gx-2 gx-xl-5">
+                    <div class="row gx-2 gx-md-5">
                         <div class="col-auto">
                             <a href="#about" class="btn px-0">About <span class="d-none d-md-block ps-1">Modluxe</span></a>
                         </div>
@@ -70,7 +70,7 @@
                 <div class="col">
                     <div class="white-divider"></div>
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-mlgd-block">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-3">
                         <div class="col-6 col-md-auto">
                             <a href="#form" class="btn border-white rounded-pill px-4">
@@ -122,7 +122,7 @@
                 <div class="col-10 col-md-12 sub_heading fs-26 fw-200">
                     A team that delivers unparalleled and unmatched quality
                 </div>
-                <div class="col-auto d-md-none">
+                <div class="col-auto d-lg-none">
                     <a href="#form" class="btn btn-gradient border-0 rounded-pill px-4">
                         <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="white" xmlns="http://www.w3.org/2000/svg">
                             <path d="M32.7343 6.87102C33.0305 6.57483 33.0305 6.09461 32.7343 5.79841L27.9076 0.971697C27.6114 0.675505 27.1312 0.675505 26.835 0.971697C26.5388 1.26789 26.5388 1.74811 26.835 2.0443L31.1254 6.33472L26.835 10.6251C26.5388 10.9213 26.5388 11.4015 26.835 11.6977C27.1312 11.9939 27.6114 11.9939 27.9076 11.6977L32.7343 6.87102ZM0.693359 7.09316L32.198 7.09316V5.57627L0.693359 5.57627L0.693359 7.09316Z" fill="white" />
@@ -135,7 +135,7 @@
 
     <div class="specialise">
         <div class="container">
-            <div class="row gy-3">
+            <div class="row gy-3 gy-md-5">
                 <div class="col-lg-6 text-center">
                     <div class="font-playlist text-gradient fs-40">Services we specialise in</div>
                     <div class="px-3 px-md-0">
@@ -180,15 +180,15 @@
 
 <section class="about" id="about">
     <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center justify-content-between gy-md-5">
             <div class="col-12 d-md-none"><?= renderImg('about-wallpapers-sm.png', 'lib', 'w-100') ?></div>
-            <div class="col-lg-6 col-xl-5">
+            <div class="col-lg-6 col-xl-5 order-md-last order-lg-first">
                 <div class="fs-70 fw-300 lh-1 pb-2">A team that delivers unparalleled and unmatched quality</div>
                 <div class="py-4 lh-1_875">
-                    <p class="pb-md-4">Let Modluxe Bathrooms take you on a journey of bringing your vision to a reality. Bathrooms are one of the most important rooms where workmanship should be held to the highest standards.</p>
+                    <p class="pb-lg-4">Let Modluxe Bathrooms take you on a journey of bringing your vision to a reality. Bathrooms are one of the most important rooms where workmanship should be held to the highest standards.</p>
                     <p>Our dedicated bathroom renovation specialists are passionate in delivering some of the most modern and trend setting styles in the Sydney market. Check out our stunning portfolio</p>
                 </div>
-                <div class="row align-items-center gx-2 gx-md-4 pt-md-6">
+                <div class="row align-items-center gx-2 gx-md-4 pt-md-5 pt-lg-6">
                     <div class="col-auto">
                         <a href="#form" class="btn border-secondary text-secondary rounded-pill px-4">
                             <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-none d-md-block"><?= renderImg('about-wallpapers.png', 'lib') ?></div>
+            <div class="col-lg-6 d-none d-md-block order-lg-last order-md-first"><?= renderImg('about-wallpapers.png', 'lib') ?></div>
         </div>
     </div>
 </section>
@@ -210,8 +210,8 @@
     <div class="container">
         <div class="portfolio-card">
             <div class="row gx-0 align-items-center order">
-                <div class="col-lg-6 order-last order-md-first">
-                    <div class="py-3 px-md-7">
+                <div class="col-lg-6 order-last order-lg-first">
+                    <div class="py-3 py-md-5 py-lg-3 px-md-4 px-lg-7">
                         <div class="text-gradient font-playlist fs-66 pb-md-2">Modern</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">If it’s sleek, cutting edge or minimal that you are looking for then a modern bathroom could be the one for you. Modluxe Bathrooms has over 15 years of experience project management and delivery of bathroom builds from concept to reality. Go with the best!</div>
                         <div class="row align-items-center gx-2 gx-md-4">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 position-relative order-first order-md-last">
+                <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
                         <div><?= renderImg('modern-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-2.jpg', 'lib') ?></div>
@@ -245,8 +245,8 @@
         </div>
         <div class="portfolio-card mt-4 mt-md-5">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-6 order-last order-md-first">
-                    <div class="py-3 px-md-7">
+                <div class="col-lg-6 order-last order-lg-first">
+                    <div class="py-3 py-md-5 py-lg-3 px-md-4 px-lg-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Traditional</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">For those who want a more classic or timeless style the traditional design could be a more suitable choice. Using a more neutral colour pallette and natural materials such as wood for cabinets and vanities, this style invites warmth and charm at the same time. Call our consultants at Modluxe today!</div>
                         <div class="row align-items-center gx-2 gx-md-4">
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 position-relative order-first order-md-last">
+                <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
                         <div><?= renderImg('traditional-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-2.jpg', 'lib') ?></div>
@@ -280,8 +280,8 @@
         </div>
         <div class="portfolio-card mt-4 mt-md-5">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-6 order-last order-md-first">
-                    <div class="py-3 px-md-7">
+                <div class="col-lg-6 order-last order-lg-first">
+                    <div class="py-3 py-md-5 py-lg-3 px-md-4 px-lg-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
                         <div class="row align-items-center gx-2 gx-md-4">
@@ -298,7 +298,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 position-relative order-first order-md-last">
+                <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
                         <div><?= renderImg('designer-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('designer-2.jpg', 'lib') ?></div>
@@ -319,7 +319,7 @@
 <section class="quick-contact d-none d-md-block">
     <div class="container-fluid px-lg-0">
         <div class="row align-items-center">
-            <div class="col-9">
+            <div class="col-6">
                 <div class="gradient-divider"></div>
             </div>
             <div class="col-auto">
@@ -336,15 +336,15 @@
     </div>
 </section>
 
-<div class="gradient-divider"></div>
+<div class="gradient-divider d-md-none"></div>
 
 <section class="team" id="team">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9">
                 <div class="fs-70 fw-300 text-center pb-4 pb-md-5 lh-1">Meet the <span class="text-gradient">Modluxe Directors</span></div>
-                <div class="row pt-5 gy-7">
-                    <div class="col-lg-6">
+                <div class="row pt-5 gy-7 gx-md-2 gx-lg-4">
+                    <div class="col-md-6">
                         <div class="team-card">
                             <?= renderImg('team-chris.png', 'lib', 'mt-n5') ?>
                             <div class="fs-48 font-playlist text-gradient pt-4 pt-md-5">Chris</div>
@@ -354,7 +354,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <div class="team-card">
                             <?= renderImg('team-ray.png', 'lib', 'mt-n5') ?>
                             <div class="fs-48 font-playlist text-gradient pt-4 pt-md-5">Ray</div>
@@ -368,7 +368,7 @@
                 <div class="row pt-5">
                     <div class="col-7 col-md-6">
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-md-auto">
+                            <div class="col-lg-auto">
                                 <div class="font-playlist fs-23 text-gradient">Proud members of</div>
                             </div>
                             <div class="col col-md-auto">
@@ -381,7 +381,7 @@
                     </div>
                     <div class="col col-md-6">
                         <div class="row justify-content-between justify-content-lg-end align-items-center">
-                            <div class="col-md-auto">
+                            <div class="col-lg-auto">
                                 <div class="font-playlist fs-23 text-gradient">Powered by</div>
                             </div>
                             <div class="col col-md-auto">
@@ -400,7 +400,7 @@
 
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center gy-3">
+        <div class="row justify-content-center justify-content-md-between align-items-center gy-3">
             <div class="col-auto d-lg-none">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                     <?= renderImg("aiims.png", "logo") ?>
