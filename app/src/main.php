@@ -1,4 +1,11 @@
 <header>
+    <div class="hero-video">
+        <video id="video" autoplay muted loop playsinline>
+            <source src="./assets/video/y2mate.mp4" type="video/mp4">
+            <source src="./assets/video/y2mate.mp4" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+    </div>
     <div class="navigation-bar">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center gx-2 gy-3">
