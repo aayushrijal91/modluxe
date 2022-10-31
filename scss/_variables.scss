@@ -1,6 +1,6 @@
 $primary: #B28E5D;
 $secondary: #FDF18C;
-$tertiary: #ededed;
+$tertiary: #131313;
 $black: #000000;
 $white: #ffffff;
 $light: #f3f3f3;
@@ -27,9 +27,13 @@ $font-sizes: (
     70: 70px,
     66: 66px,
     60: 60px,
+    48: 48px,
     40: 40px,
+    29: 29px,
     26: 26px,
+    23: 23px,
     16: 16px,
+    14: 14px,
 );
 
 // Grid Breakpoints
@@ -138,3 +142,5 @@ $utilities: map-merge((
         )
     )
 ), $utilities);
+
+$enable-negative-margins: true;

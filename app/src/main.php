@@ -115,7 +115,7 @@
 </section>
 <div class="gradient-divider"></div>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-xl-5">
@@ -142,7 +142,7 @@
     </div>
 </section>
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="container">
         <div class="portfolio-card">
             <div class="row gx-0 align-items-center">
@@ -251,27 +251,106 @@
         </div>
     </div>
 </section>
+
+<section class="quick-contact">
+    <div class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-9">
+                <div class="gradient-divider"></div>
+            </div>
+            <div class="col-auto">
+                <a href="#form" class="btn border-secondary text-secondary rounded-pill px-4">
+                    <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.7343 6.87102C33.0305 6.57483 33.0305 6.09461 32.7343 5.79841L27.9076 0.971697C27.6114 0.675505 27.1312 0.675505 26.835 0.971697C26.5388 1.26789 26.5388 1.74811 26.835 2.0443L31.1254 6.33472L26.835 10.6251C26.5388 10.9213 26.5388 11.4015 26.835 11.6977C27.1312 11.9939 27.6114 11.9939 27.9076 11.6977L32.7343 6.87102ZM0.693359 7.09316L32.198 7.09316V5.57627L0.693359 5.57627L0.693359 7.09316Z" fill="#FDF18C" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col">
+                <div class="gradient-divider"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team" id="team">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="fs-70 fw-300 text-center pb-5">Meet the <span class="text-gradient">Modluxe Directors</span></div>
+                <div class="row pt-5">
+                    <div class="col-lg-6">
+                        <div class="team-card">
+                            <?= renderImg('team-chris.png', 'lib', 'mt-n5') ?>
+                            <div class="fs-48 font-playlist text-gradient pt-5">Chris</div>
+                            <div class="fs-14 fw-300 font-inter pt-3">
+                                <p>Christopher Kolar is the Co-founder and managing director of Modluxe. Chris is a highly experienced builder who lives and breathes construction. With over 15 years of experience in the construction industry, Chris has a passion for providing outstanding customer service and superior construction works for his clients.</p>
+                                <p>Chris is also the founder and director of KC Constructions of which he has successfully built up into successful construction and renovation leader in the Sydney region. Along with his team of expert tradesmen, Chris is confident that Modluxe can produce results for you that are second to none.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-card">
+                            <?= renderImg('team-ray.png', 'lib', 'mt-n5') ?>
+                            <div class="fs-48 font-playlist text-gradient pt-5">Ray</div>
+                            <div class="fs-14 fw-300 font-inter pt-3">
+                                <p>Raymond Albassit is the Co-founder and managing director of Modluxe. Ray has over 25 years experience in the Gyprock/Plastering, renovation and construction industry. His experience is vast and shows through the pride that he takes in his work.</p>
+                                <p>Ray is passionate about his work and providing outstanding customer service. Ray is the founder and director of Complete Interior Linings, the professionals in Gyprocking & Plastering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-6">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div class="font-playlist fs-23 text-gradient">Proud members of</div>
+                            </div>
+                            <div class="col-auto">
+                                <?= renderImg('master-builders.png', 'lib') ?>
+                            </div>
+                            <div class="col-auto">
+                                <?= renderImg('hia-member.png', 'lib') ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row justify-content-between justify-content-lg-end align-items-center">
+                            <div class="col-auto">
+                                <div class="font-playlist fs-23 text-gradient">Powered by</div>
+                            </div>
+                            <div class="col-auto">
+                                <?= renderImg('kc-constructions.png', 'lib') ?>
+                            </div>
+                            <div class="col-auto">
+                                <?= renderImg('cil.png', 'lib') ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">
             <div class="col-auto">
-                <div class="row gx-2 gx-md-3 justify-content-center">
-                    <div class="col-12 text-center pb-3 d-lg-none">
+                <div class="font-playlist fs-29 text-gradient">The perfect blend of modern and luxury</div>
+            </div>
+            <div class="col-auto">
+                <div class="row gx-2 gx-md-3 gx-xl-5 justify-content-center align-items-center">
+                    <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
+                    <div class="col-auto text-primary">|</div>
+                    <div class="col-auto text-center">All Rights Reserved</div>
+                    <div class="col-auto text-primary">|</div>
+                    <div class="col-auto text-center"><?= $site ?></div>
+                    <div class="col-auto d-none d-lg-block">
                         <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                             <?= renderImg("aiims.png", "logo") ?>
                         </a>
                     </div>
-                    <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
-                    <div class="col-auto">|</div>
-                    <div class="col-auto text-center"><?= $site ?></div>
-                    <div class="col-auto">|</div>
-                    <div class="col-auto text-center">All Rights Reserved</div>
                 </div>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                    <?= renderImg("aiims.png", "logo") ?>
-                </a>
             </div>
         </div>
     </div>

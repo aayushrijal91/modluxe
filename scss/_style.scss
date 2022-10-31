@@ -103,9 +103,36 @@ section.portfolio {
     }
 }
 
+section.quick-contact {
+    padding-top: 132px;
+}
+
+section.team {
+    padding: 77px 0 64px;
+    background: imgUrl('about.png');
+    background-size: cover;
+
+    .team-card {
+        border-radius: 4px;
+        background-color: $tertiary;
+        padding: 0 34px 59px;
+        text-align: center;
+        height: 100%;
+        line-height: 1.66;
+
+        img {
+            height: 144px;
+            width: 144px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
 footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+    background-color: #1A1A1A;
+    color: #909090;
+    padding: 34px 0;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;
