@@ -18,6 +18,10 @@ header {
         text-align: center;
         padding: 176px 0 266px;
 
+        @include media-breakpoint-down(xl) {
+            padding: 120px 0;
+        }
+
         @include media-breakpoint-down(lg) {
             padding: 76px 0;
         }
@@ -62,6 +66,16 @@ section.about {
     background: imgUrl('about.png');
     background-size: cover;
     padding: 44px 0 95px;
+
+    @include media-breakpoint-down(xl) {
+        padding: 95px 0;
+    }
+
+    @include media-breakpoint-only(lg) {
+        .hero_heading {
+            font-size: 3.5rem !important;
+        }
+    }
 
     @include media-breakpoint-down(sm) {
         padding: 21px 0;
