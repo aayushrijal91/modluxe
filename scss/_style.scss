@@ -61,20 +61,21 @@ section.portfolio {
             .slick-dots {
                 display: flex !important;
                 bottom: -20px;
+                right: 85px;
                 list-style-type: none;
                 justify-content: end;
-    
+
                 li {
                     margin: 0 2.5px;
                     width: 10px;
                     height: 10px;
-    
+
                     button:before {
                         width: 10px;
                         height: 10px;
                     }
                 }
-    
+
                 button {
                     display: block;
                     width: 10px;
@@ -86,12 +87,18 @@ section.portfolio {
                     border-radius: 50%;
                     opacity: 0.2;
                 }
-    
+
                 li.slick-active button {
                     background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
                     opacity: 1;
                 }
             }
+        }
+
+        .nextArrow {
+            position: absolute;
+            right: 0;
+            bottom: -27px;
         }
     }
 }

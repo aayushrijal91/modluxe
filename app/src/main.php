@@ -164,12 +164,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 position-relative">
                     <div class="portfolio-slider">
                         <div><?= renderImg('modern-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-2.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-4.jpg', 'lib') ?></div>
+                    </div>
+                    <div class="nextArrow" id="arrow1">
+                        <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M74.5073 6.50707C74.7873 6.22702 74.7873 5.77298 74.5073 5.49293L69.9436 0.9293C69.6636 0.649253 69.2096 0.649253 68.9295 0.9293C68.6495 1.20935 68.6495 1.66339 68.9295 1.94344L72.9861 6L68.9295 10.0566C68.6495 10.3366 68.6495 10.7907 68.9295 11.0707C69.2096 11.3507 69.6636 11.3507 69.9436 11.0707L74.5073 6.50707ZM0.855469 6.71711H74.0002V5.28289H0.855469V6.71711Z" fill="white" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -194,12 +199,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 position-relative">
                     <div class="portfolio-slider">
                         <div><?= renderImg('traditional-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-2.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-4.jpg', 'lib') ?></div>
+                    </div>
+                    <div class="nextArrow">
+                        <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M74.5073 6.50707C74.7873 6.22702 74.7873 5.77298 74.5073 5.49293L69.9436 0.9293C69.6636 0.649253 69.2096 0.649253 68.9295 0.9293C68.6495 1.20935 68.6495 1.66339 68.9295 1.94344L72.9861 6L68.9295 10.0566C68.6495 10.3366 68.6495 10.7907 68.9295 11.0707C69.2096 11.3507 69.6636 11.3507 69.9436 11.0707L74.5073 6.50707ZM0.855469 6.71711H74.0002V5.28289H0.855469V6.71711Z" fill="white" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -224,12 +234,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 position-relative">
                     <div class="portfolio-slider">
                         <div><?= renderImg('designer-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('designer-2.jpg', 'lib') ?></div>
                         <div><?= renderImg('designer-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('designer-4.jpg', 'lib') ?></div>
+                    </div>
+                    <div class="nextArrow">
+                        <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M74.5073 6.50707C74.7873 6.22702 74.7873 5.77298 74.5073 5.49293L69.9436 0.9293C69.6636 0.649253 69.2096 0.649253 68.9295 0.9293C68.6495 1.20935 68.6495 1.66339 68.9295 1.94344L72.9861 6L68.9295 10.0566C68.6495 10.3366 68.6495 10.7907 68.9295 11.0707C69.2096 11.3507 69.6636 11.3507 69.9436 11.0707L74.5073 6.50707ZM0.855469 6.71711H74.0002V5.28289H0.855469V6.71711Z" fill="white" />
+                        </svg>
                     </div>
                 </div>
             </div>

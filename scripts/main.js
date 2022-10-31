@@ -11,11 +11,17 @@ document.querySelectorAll('a[href="#form"],a[href="#about"],a[href="#portfolio"]
 });
 
 $(() => {
-    $('.portfolio-slider').slick({
-        slidesToShow:1,
-        variableWidth: true,
-        dots: true,
-    });
+    $('.portfolio-slider').each(function() {
+      let e = $(this);
+
+      e.slick({
+          slidesToShow:1,
+          variableWidth: true,
+          dots: true,
+          prevArrow: false,
+          nextArrow: e.parent().find('.nextArrow'),
+      });
+    })
 })
 
 $(window).on('scroll', () => {
