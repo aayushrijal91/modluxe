@@ -58,11 +58,20 @@ section.about {
     background: imgUrl('about.png');
     background-size: cover;
     padding: 44px 0 95px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 21px 0;
+    }
 }
 
 section.portfolio {
     .portfolio-card {
         background: rgba(19, 19, 19, 0.74);
+
+        
+        @include media-breakpoint-down(sm) {
+            padding: 17px 12px
+        }
 
         .portfolio-slider {
             margin-bottom: 0;
@@ -125,6 +134,10 @@ section.team {
     background: imgUrl('about.png');
     background-size: cover;
 
+    @include media-breakpoint-down(sm) {
+        padding: 48px 0;
+    }
+
     .team-card {
         border-radius: 4px;
         background-color: $tertiary;
@@ -132,6 +145,10 @@ section.team {
         text-align: center;
         height: 100%;
         line-height: 1.66;
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 17px 37px;
+        }
 
         img {
             height: 144px;
