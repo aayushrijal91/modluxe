@@ -21,7 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
+        $comment = $_POST['message'];
+        $portfolio_copy = $_POST['portfolio_copy'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '</tr>' .
             '<tr>' .
             '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
+            '<td><b>' . strip_tags($comment) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 
@@ -70,6 +71,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);
+
+        $dest_path = './../assets/uploads/ModluxePortfolio_A4_Sep2022.pdf';
+
+        global $mime_boundary, $messagea;
+
+        if ($portfolio_copy) {
+            $portfolio_headers = "MIME-Version: 1.0\r\n" .
+                "Content-type: text/html; charset=utf-8\r\n" .
+                "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
+                "X-Mailer: PHP/" . phpversion();
+
+            $messagea .= "--{$mime_boundary}\n";
+            $fp =    @fopen($dest_path, "rb");
+            $data =  @fread($fp, filesize($dest_path));
+            @fclose($fp);
+            $data = chunk_split(base64_encode($data));
+
+            $messagea .= "Content-Type: application/octet-stream; name=\"" . basename($dest_path) . "\"\n" .
+                "Content-Description: " . basename($dest_path) . "\n" .
+                "Content-Disposition: attachment;\n" . " filename=\"" . basename($dest_path) . "\"; size=" . filesize($dest_path) . ";\n" .
+                "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+
+            mail($email, $subject, $messagea, $portfolio_headers);
+        }
 
         if ($result) {
             header('location:./../thankyou');
