@@ -2,9 +2,87 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+.modal#form {
+    .modal-dialog {
+        width: 90%;
+        max-width: 90%;
+
+        .modal-content {
+            background: imgUrl('about.png') center top $black;
+            border: 0;
+            border-radius: 0;
+
+            .modal-header {
+                border-bottom: 0;
+
+                .btn-close:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+
+            .modal-body {
+                padding: 66px 0;
+
+                form {
+                    padding-top: 39px;
+
+                    .form_row {
+                        --bs-gutter-y: 54px;
+                    }
+
+                    input[type=text],
+                    input[type=tel],
+                    input[type=email] {
+                        font-weight: 200;
+                        padding: 0 0 8px 0;
+                        border-radius: 0;
+                        border: 0;
+                        border-bottom: 1px solid #dadada;
+                        color: $white;
+                        background: none;
+                        font-size: 1.25rem;
+
+                        &::placeholder {
+                            color: #dadada;
+                            opacity: 0.6;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    input[type=checkbox] {
+                        border: 1px solid $primary;
+                        background: none;
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 0;
+                        transition: 0.3s all;
+
+                        &:checked {
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-color: #b28e5d !important;
+                            border-color: #b28e5d !important;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-    background-size: cover;
     position: relative;
     overflow: hidden;
 
