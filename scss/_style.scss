@@ -2,6 +2,10 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+.pac-container.pac-logo {
+    z-index: 10000000;
+}
+
 .modal#form {
     .modal-dialog {
         @include media-breakpoint-up(md) {
@@ -76,18 +80,6 @@
 
                 form {
                     padding-top: 39px;
-
-                    .form_row {
-                        --bs-gutter-y: 54px;
-
-                        @include media-breakpoint-down(xxl) {
-                            --bs-gutter-y: 34px;
-                        }
-
-                        @include media-breakpoint-down(sm) {
-                            --bs-gutter-y: 20px;
-                        }
-                    }
 
                     input[type=text],
                     input[type=tel],

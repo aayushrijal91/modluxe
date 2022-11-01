@@ -5,6 +5,7 @@ $site = "Modluxe Bathrooms";
 $phone_number = "1300 011 139";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
+$instagram = "https://www.instagram.com/modluxebathrooms/";
 $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;

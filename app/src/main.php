@@ -13,7 +13,7 @@
                     <div class="row align-items-center gy-4">
                         <div class="col-lg-6 px-4 px-xxl-6">
                             <div class="text-center pb-3"><?= renderImg('brook.png', 'lib', 'dp') ?></div>
-                            <div class="hero_heading text-center text-gradient fs-116 font-playlist">Meet Brook</div>
+                            <div class="hero_heading text-center text-gradient fs-116 font-playlist">Meet Brooke</div>
                             <div class="sub_heading fs-70 text-gradient fw-200 lh-1 text-center pt-3 pb-4">Your Bathroom Stylist</div>
                             <div class="row justify-content-center align-items-center gx-3">
                                 <div class="col">
@@ -81,10 +81,10 @@
                             </div>
                         </div>
                         <div class="col-lg-6 px-4 px-xxl-6">
-                            <div class="form_heading text-gradient text-capitalize fs-40 fw-200 lh-1">Let Us make your bathroom<br> Renovation Experience Seamless</div>
+                            <div class="form_heading text-gradient fs-40 fw-200 lh-1">Let us make your bathroom<br> renovation experience seamless</div>
                             <form action="./src/form" method="POST">
                                 <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
-                                <div class="row form_row">
+                                <div class="row gy-3 gy-md-5">
                                     <div class="col-12">
                                         <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                                     </div>
@@ -93,6 +93,9 @@
                                     </div>
                                     <div class="col-12">
                                         <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="suburb" name="suburb" placeholder="Your Suburb" required>
                                     </div>
                                     <div class="col-12">
                                         <input type="text" class="form-control" name="message" placeholder="Your Message" required>
@@ -153,7 +156,7 @@
                                         </a>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="#">
+                                        <a href="<?= $instagram ?>" target="_blank">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M6.79102 1.80127C8.34869 1.80127 8.53319 1.80784 9.14868 1.83555C9.51853 1.83999 9.88486 1.90808 10.2316 2.03682C10.4852 2.13051 10.7145 2.28005 10.9025 2.47437C11.0968 2.66236 11.2464 2.89166 11.3401 3.14528C11.4688 3.49203 11.5369 3.85836 11.5413 4.22821C11.5691 4.8437 11.5756 5.03039 11.5756 6.58587C11.5756 8.14136 11.5691 8.32805 11.5413 8.94353C11.5369 9.31339 11.4688 9.67971 11.3401 10.0265C11.2432 10.2781 11.0947 10.5067 10.904 10.6974C10.7133 10.8881 10.4847 11.0366 10.2331 11.1335C9.88632 11.2622 9.51999 11.3303 9.15014 11.3347C8.53465 11.3624 8.34796 11.369 6.79248 11.369C5.23699 11.369 5.0503 11.3624 4.43482 11.3347C4.06496 11.3303 3.69863 11.2622 3.35188 11.1335C3.09826 11.0398 2.86897 10.8902 2.68097 10.6959C2.48666 10.5079 2.33712 10.2786 2.24343 10.025C2.11468 9.67825 2.0466 9.31193 2.04215 8.94207C2.01444 8.32659 2.00788 8.1399 2.00788 6.58441C2.00788 5.02893 2.01444 4.84224 2.04215 4.22675C2.0466 3.8569 2.11468 3.49057 2.24343 3.14382C2.33712 2.8902 2.48666 2.66091 2.68097 2.47291C2.86897 2.2786 3.09826 2.12906 3.35188 2.03536C3.69863 1.90662 4.06496 1.83853 4.43482 1.83409C5.0503 1.80638 5.23699 1.79982 6.79248 1.79982L6.79102 1.80127ZM6.79102 0.750427C5.20636 0.750427 5.00801 0.75699 4.3845 0.785431C3.90098 0.795264 3.42262 0.88699 2.96976 1.05671C2.58031 1.20297 2.22761 1.43271 1.93641 1.72981C1.63932 2.021 1.40957 2.37371 1.26332 2.76315C1.09359 3.21602 1.00187 3.69437 0.992035 4.17789C0.963594 4.8014 0.957031 4.99976 0.957031 6.58441C0.957031 8.16907 0.963594 8.36742 0.992035 8.99093C1.00187 9.47445 1.09359 9.95281 1.26332 10.4057C1.40957 10.7951 1.63932 11.1478 1.93641 11.439C2.22761 11.7361 2.58031 11.9659 2.96976 12.1121C3.42308 12.282 3.90194 12.3737 4.38596 12.3834C5.00801 12.4118 5.20636 12.4184 6.79102 12.4184C8.37567 12.4184 8.57403 12.4118 9.19754 12.3834C9.68155 12.3737 10.1604 12.282 10.6137 12.1121C11.0013 11.9621 11.3532 11.7328 11.6471 11.439C11.9409 11.1452 12.1702 10.7932 12.3202 10.4057C12.4901 9.95235 12.5818 9.47349 12.5915 8.98947C12.6199 8.36743 12.6265 8.16907 12.6265 6.58295C12.6265 4.99684 12.6199 4.79994 12.5915 4.17644C12.581 3.69332 12.4888 3.21547 12.3187 2.76315C12.1725 2.37371 11.9427 2.021 11.6456 1.72981C11.3544 1.43271 11.0017 1.20297 10.6123 1.05671C10.1594 0.88699 9.68106 0.795264 9.19754 0.785431C8.57403 0.75699 8.37567 0.750427 6.79102 0.750427Z" fill="white" />
                                                 <path d="M6.79102 3.58866C6.19851 3.58866 5.61932 3.76436 5.12667 4.09354C4.63402 4.42271 4.25005 4.89059 4.0233 5.43799C3.79656 5.98539 3.73724 6.58774 3.85283 7.16886C3.96842 7.74997 4.25374 8.28377 4.6727 8.70273C5.09166 9.12169 5.62546 9.40701 6.20658 9.5226C6.78769 9.63819 7.39004 9.57887 7.93744 9.35213C8.48484 9.12539 8.95272 8.74141 9.28189 8.24876C9.61107 7.75611 9.78677 7.17692 9.78677 6.58441C9.78677 6.19101 9.70928 5.80145 9.55873 5.43799C9.40818 5.07453 9.18752 4.74428 8.90933 4.4661C8.63115 4.18792 8.3009 3.96725 7.93744 3.8167C7.57398 3.66615 7.18443 3.58866 6.79102 3.58866ZM6.79102 8.52932C6.40635 8.52932 6.03032 8.41525 5.71049 8.20154C5.39065 7.98783 5.14136 7.68408 4.99416 7.3287C4.84695 6.97331 4.80844 6.58226 4.88348 6.20498C4.95853 5.82771 5.14376 5.48116 5.41576 5.20916C5.68776 4.93716 6.03431 4.75192 6.41159 4.67688C6.78886 4.60183 7.17992 4.64035 7.5353 4.78756C7.89069 4.93476 8.19444 5.18404 8.40815 5.50388C8.62186 5.82372 8.73592 6.19975 8.73592 6.58441C8.73592 7.10023 8.53101 7.59493 8.16627 7.95967C7.80153 8.32441 7.30684 8.52932 6.79102 8.52932Z" fill="white" />
@@ -209,7 +212,7 @@
                             </a>
                         </div>
                         <div class="col-auto">
-                            <a href="#">
+                            <a href="<?= $instagram ?>" target="_blank">
                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 1.441C10.136 1.441 10.389 1.45 11.233 1.488C11.7402 1.49409 12.2425 1.58746 12.718 1.764C13.0658 1.89248 13.3802 2.09754 13.638 2.364C13.9045 2.62179 14.1095 2.93622 14.238 3.284C14.4145 3.75949 14.5079 4.26183 14.514 4.769C14.552 5.613 14.561 5.869 14.561 8.002C14.561 10.135 14.552 10.391 14.514 11.235C14.5079 11.7422 14.4145 12.2445 14.238 12.72C14.1052 13.0651 13.9015 13.3785 13.64 13.64C13.3785 13.9015 13.0651 14.1052 12.72 14.238C12.2445 14.4145 11.7422 14.5079 11.235 14.514C10.391 14.552 10.135 14.561 8.002 14.561C5.869 14.561 5.613 14.552 4.769 14.514C4.26183 14.5079 3.75949 14.4145 3.284 14.238C2.93622 14.1095 2.62179 13.9045 2.364 13.638C2.09754 13.3802 1.89248 13.0658 1.764 12.718C1.58746 12.2425 1.49409 11.7402 1.488 11.233C1.45 10.389 1.441 10.133 1.441 8C1.441 5.867 1.45 5.611 1.488 4.767C1.49409 4.25983 1.58746 3.75749 1.764 3.282C1.89248 2.93422 2.09754 2.61979 2.364 2.362C2.62179 2.09554 2.93622 1.89048 3.284 1.762C3.75949 1.58546 4.26183 1.49209 4.769 1.486C5.613 1.448 5.869 1.439 8.002 1.439L8 1.441ZM8 0C5.827 0 5.555 0.009 4.7 0.048C4.03696 0.0614835 3.381 0.187265 2.76 0.42C2.22596 0.620558 1.74231 0.9356 1.343 1.343C0.9356 1.74231 0.620558 2.22596 0.42 2.76C0.187265 3.381 0.0614835 4.03696 0.048 4.7C0.009 5.555 0 5.827 0 8C0 10.173 0.009 10.445 0.048 11.3C0.0614835 11.963 0.187265 12.619 0.42 13.24C0.620558 13.774 0.9356 14.2577 1.343 14.657C1.74231 15.0644 2.22596 15.3794 2.76 15.58C3.38163 15.813 4.03828 15.9387 4.702 15.952C5.555 15.991 5.827 16 8 16C10.173 16 10.445 15.991 11.3 15.952C11.9637 15.9387 12.6204 15.813 13.242 15.58C13.7734 15.3743 14.256 15.0599 14.659 14.657C15.0619 14.254 15.3763 13.7714 15.582 13.24C15.815 12.6184 15.9407 11.9617 15.954 11.298C15.993 10.445 16.002 10.173 16.002 7.998C16.002 5.823 15.993 5.553 15.954 4.698C15.9397 4.03552 15.8132 3.38025 15.58 2.76C15.3794 2.22596 15.0644 1.74231 14.657 1.343C14.2577 0.9356 13.774 0.620558 13.24 0.42C12.619 0.187265 11.963 0.0614835 11.3 0.048C10.445 0.009 10.173 0 8 0Z" fill="white" />
                                     <path d="M8 3.892C7.18751 3.892 6.39327 4.13293 5.71772 4.58432C5.04216 5.03572 4.51563 5.6773 4.2047 6.42794C3.89378 7.17858 3.81243 8.00456 3.97093 8.80143C4.12944 9.5983 4.52069 10.3303 5.09521 10.9048C5.66972 11.4793 6.40169 11.8706 7.19857 12.0291C7.99544 12.1876 8.82142 12.1062 9.57206 11.7953C10.3227 11.4844 10.9643 10.9578 11.4157 10.2823C11.8671 9.60673 12.108 8.81249 12.108 8C12.108 7.46053 12.0017 6.92634 11.7953 6.42794C11.5889 5.92953 11.2863 5.47667 10.9048 5.09521C10.5233 4.71374 10.0705 4.41115 9.57206 4.2047C9.07366 3.99826 8.53947 3.892 8 3.892ZM8 10.667C7.47252 10.667 6.95688 10.5106 6.51829 10.2175C6.07971 9.92448 5.73787 9.50795 5.53601 9.02062C5.33415 8.53329 5.28134 7.99704 5.38425 7.47969C5.48715 6.96235 5.74116 6.48713 6.11415 6.11415C6.48713 5.74116 6.96235 5.48715 7.47969 5.38425C7.99704 5.28134 8.53329 5.33415 9.02062 5.53601C9.50795 5.73787 9.92448 6.07971 10.2175 6.51829C10.5106 6.95688 10.667 7.47252 10.667 8C10.667 8.70733 10.386 9.38569 9.88585 9.88585C9.38569 10.386 8.70733 10.667 8 10.667Z" fill="white" />
@@ -318,50 +321,22 @@
                     <div class="row">
                         <div class="col-6 col-md-4">
                             <div class="about-slider" id="about-slider-1">
-                                <div><?= renderImg("about-9.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-11.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-13.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-6.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-5.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-7.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-12.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-1.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-10.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-8.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-14.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
                             </div>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="about-slider" id="about-slider-2">
-                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-5.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-14.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-1.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-6.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-7.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-12.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-8.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-13.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-9.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-10.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-11.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
                             </div>
                         </div>
                         <div class="col-6 col-md-4 d-none d-md-block">
                             <div class="about-slider" id="about-slider-3">
-                                <div><?= renderImg("about-1.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-5.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-6.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-7.jpg", "lib") ?></div>
-                                <div><?= renderImg("about-8.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-9.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-10.jpg", "lib") ?></div>
                                 <div><?= renderImg("about-11.jpg", "lib") ?></div>
@@ -405,6 +380,10 @@
                         <div><?= renderImg('modern-2.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-4.jpg', 'lib') ?></div>
+                        <div><?= renderImg('modern-5.jpg', 'lib') ?></div>
+                        <div><?= renderImg('modern-6.jpg', 'lib') ?></div>
+                        <div><?= renderImg('modern-7.jpg', 'lib') ?></div>
+                        <div><?= renderImg('modern-8.jpg', 'lib') ?></div>
                     </div>
                     <div class="nextArrow" id="arrow1">
                         <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -440,6 +419,9 @@
                         <div><?= renderImg('traditional-2.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-4.jpg', 'lib') ?></div>
+                        <div><?= renderImg('traditional-5.jpg', 'lib') ?></div>
+                        <div><?= renderImg('traditional-6.jpg', 'lib') ?></div>
+                        <div><?= renderImg('traditional-7.jpg', 'lib') ?></div>
                     </div>
                     <div class="nextArrow">
                         <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +436,7 @@
                 <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
-                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
+                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance, a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
                         <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
@@ -545,7 +527,7 @@
                             <div class="col col-md-auto">
                                 <?= renderImg('master-builders.png', 'lib') ?>
                             </div>
-                            <div class="col col-md-auto">
+                            <div class="col">
                                 <?= renderImg('hia-member.png', 'lib') ?>
                             </div>
                         </div>

@@ -10,6 +10,15 @@ document.querySelectorAll('a[href="#form"],a[href="#about"],a[href="#portfolio"]
     });
 });
 
+function initPlaces() {
+    if ($('#suburb').length) {
+        new google.maps.places.Autocomplete(
+            document.getElementById('suburb'),
+            { types: ['geocode'] }
+        );
+    }
+};
+
 $(() => {
     $('.portfolio-slider').each(function() {
       let e = $(this);
