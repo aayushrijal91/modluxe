@@ -337,7 +337,7 @@
     <div class="container">
         <div class="portfolio-card">
             <div class="row gx-0 align-items-center order">
-                <div class="col-lg-6 order-last order-lg-first">
+                <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-md-2">Modern</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">If it’s sleek, cutting edge or minimal that you are looking for then a modern bathroom could be the one for you. Modluxe Bathrooms has over 15 years of experience project management and delivery of bathroom builds from concept to reality. Go with the best!</div>
@@ -372,7 +372,7 @@
         </div>
         <div class="portfolio-card mt-4 mt-md-5">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-6 order-last order-lg-first">
+                <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Traditional</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">For those who want a more classic or timeless style the traditional design could be a more suitable choice. Using a more neutral colour pallette and natural materials such as wood for cabinets and vanities, this style invites warmth and charm at the same time. Call our consultants at Modluxe today!</div>
@@ -407,7 +407,7 @@
         </div>
         <div class="portfolio-card mt-4 mt-md-5">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-6 order-last order-lg-first">
+                <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
