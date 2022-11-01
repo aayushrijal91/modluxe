@@ -294,7 +294,7 @@
 <section class="about" id="about">
     <div class="container">
         <div class="row align-items-center justify-content-between gy-md-5">
-            <div class="col-lg-6 col-xl-5 order-md-last order-first">
+            <div class="col-lg-6 col-xl-5 order-lg-first order-last">
                 <div class="hero_heading fs-70 fw-300 lh-1 pb-2">A team that delivers unparalleled and unmatched quality</div>
                 <div class="py-4 lh-1_875">
                     <p class="pb-lg-4">Let Modluxe Bathrooms take you on a journey of bringing your vision to a reality. Bathrooms are one of the most important rooms where workmanship should be held to the highest standards.</p>
@@ -313,8 +313,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 order-last order-md-first">
-                <div class="about-slider-wrapper my-3 my-xl-0 py-1 py-xl-0">
+            <div class="col-lg-6 order-lg-last order-first">
+                <div class="about-slider-wrapper mb-3 mb-xl-0 py-1 py-xl-0">
                     <div class="row">
                         <div class="col-6 col-md-4">
                             <div class="about-slider" id="about-slider-1">
