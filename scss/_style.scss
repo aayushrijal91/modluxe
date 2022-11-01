@@ -180,6 +180,24 @@ header {
         @include media-breakpoint-down(sm) {
             padding: 15px 0;
         }
+
+        .main_container {
+            position: relative;
+
+            &::after {
+                height: 1px;
+                background: $white;
+                position: absolute;
+                width: 100%;
+                content: "";
+                top: 50%;
+                right: -100%;
+
+                @include media-breakpoint-down(xl) {
+                    display: none;
+                }
+            }
+        }
     }
 
     .banner {
@@ -248,12 +266,40 @@ section.about {
     @include media-breakpoint-down(sm) {
         padding: 21px 0;
     }
+
+    .main_row {
+        position: relative;
+
+        &::before {
+            height: 1px;
+            background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
+            position: absolute;
+            width: 100%;
+            content: "";
+            top: 50%;
+            left: -100%;
+        }
+    }
 }
 
 section.portfolio {
     .portfolio-card {
         background: rgba(19, 19, 19, 0.74);
+        overflow: hidden;
 
+        .main_row {
+            position: relative;
+    
+            &::before {
+                height: 1px;
+                background: linear-gradient(180deg, #FDF18C 0%, #B28E5D 90.1%);
+                position: absolute;
+                width: 100%;
+                content: "";
+                top: 50%;
+                left: -100%;
+            }
+        }
 
         @include media-breakpoint-down(lg) {
             padding: 17px 12px

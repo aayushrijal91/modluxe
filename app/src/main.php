@@ -1,4 +1,3 @@
-<!-- Modal -->
 <div class="modal fade" id="form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="formLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -118,6 +117,7 @@
         </div>
     </div>
 </div>
+
 <header>
     <div class="hero-video">
         <video id="video" autoplay muted loop playsinline>
@@ -127,8 +127,8 @@
         </video>
     </div>
     <div class="navigation-bar">
-        <div class="container">
-            <div class="row justify-content-center justify-content-lg-between align-items-center gx-2 gy-3">
+        <div class="container main_container">
+            <div class="row justify-content-center justify-content-lg-between align-items-center gx-2 gy-3 gy-xl-0">
                 <div class="col-12 d-xl-none">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-0">
                         <div class="col-auto">
@@ -315,7 +315,7 @@
                     <p class="pb-lg-4">Let Modluxe Bathrooms take you on a journey of bringing your vision to a reality. Bathrooms are one of the most important rooms where workmanship should be held to the highest standards.</p>
                     <p>Our dedicated bathroom renovation specialists are passionate in delivering some of the most modern and trend setting styles in the Sydney market. Check out our stunning portfolio</p>
                 </div>
-                <div class="row align-items-center gx-2 gx-md-4 pt-md-5 pt-xl-6">
+                <div class="row align-items-center gx-2 gx-md-4 mt-md-5 mt-xl-6 main_row">
                     <div class="col-auto">
                         <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
                             <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +341,7 @@
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-md-2">Modern</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">If it’s sleek, cutting edge or minimal that you are looking for then a modern bathroom could be the one for you. Modluxe Bathrooms has over 15 years of experience project management and delivery of bathroom builds from concept to reality. Go with the best!</div>
-                        <div class="row align-items-center gx-2 gx-md-4">
+                        <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
                                     <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +376,7 @@
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Traditional</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">For those who want a more classic or timeless style the traditional design could be a more suitable choice. Using a more neutral colour pallette and natural materials such as wood for cabinets and vanities, this style invites warmth and charm at the same time. Call our consultants at Modluxe today!</div>
-                        <div class="row align-items-center gx-2 gx-md-4">
+                        <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
                                     <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
@@ -411,7 +411,7 @@
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
                         <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
                         <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
-                        <div class="row align-items-center gx-2 gx-md-4">
+                        <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
                                     <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
