@@ -4,8 +4,10 @@
 
 .modal#form {
     .modal-dialog {
-        width: 90%;
-        max-width: 90%;
+        @include media-breakpoint-up(md) {
+            width: 90%;
+            max-width: 90%;
+        }
 
         .modal-content {
             background: imgUrl('about.png') center top $black;
@@ -24,11 +26,67 @@
             .modal-body {
                 padding: 66px 0;
 
+                @include media-breakpoint-down(sm) {
+                    padding: 20px 0;
+
+                    .dp {
+                        max-width: 71px;
+                    }
+                }
+
+                .hero_heading {
+                    @include media-breakpoint-down(xl) {
+                        font-size: 80px !important;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 50px !important;
+                    }
+                }
+
+                .sub_heading {
+                    @include media-breakpoint-down(xl) {
+                        font-size: 40px !important;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 29px !important;
+                    }
+                }
+
+                .form_heading {
+                    @include media-breakpoint-down(xl) {
+                        font-size: 32px !important;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        text-align: center;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 22px !important;
+                    }
+                }
+
+                .form_phoneBtn {
+                    @include media-breakpoint-down(sm) {
+                        font-size: 15px !important;
+                    }
+                }
+
                 form {
                     padding-top: 39px;
 
                     .form_row {
                         --bs-gutter-y: 54px;
+
+                        @include media-breakpoint-down(xxl) {
+                            --bs-gutter-y: 34px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            --bs-gutter-y: 20px;
+                        }
                     }
 
                     input[type=text],
@@ -52,6 +110,10 @@
                             outline: none;
                             box-shadow: none;
                         }
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: 12px !important;
+                        }
                     }
 
                     input[type=checkbox] {
@@ -61,6 +123,11 @@
                         width: 32px;
                         border-radius: 0;
                         transition: 0.3s all;
+
+                        @include media-breakpoint-down(sm) {
+                            height: 18px;
+                            width: 18px;
+                        }
 
                         &:checked {
                             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
@@ -73,6 +140,12 @@
                         &:focus {
                             outline: none;
                             box-shadow: none;
+                        }
+                    }
+
+                    label {
+                        @include media-breakpoint-down(sm) {
+                            font-size: 13px !important;
                         }
                     }
                 }

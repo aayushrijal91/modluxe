@@ -11,17 +11,17 @@
             </div>
             <div class="modal-body">
                 <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 px-6">
-                            <div class="text-center pb-3"><?= renderImg('brook.png', 'lib') ?></div>
-                            <div class="text-center text-gradient fs-116 font-playlist">Meet Brook</div>
-                            <div class="fs-70 text-gradient fw-200 lh-1 text-center pt-3 pb-4">Your Bathroom Stylist</div>
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-6 px-4 px-xxl-6">
+                            <div class="text-center pb-3"><?= renderImg('brook.png', 'lib', 'dp') ?></div>
+                            <div class="hero_heading text-center text-gradient fs-116 font-playlist">Meet Brook</div>
+                            <div class="sub_heading fs-70 text-gradient fw-200 lh-1 text-center pt-3 pb-4">Your Bathroom Stylist</div>
                             <div class="row justify-content-center align-items-center gx-3">
                                 <div class="col">
                                     <div class="gradient-divider"></div>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="tel:<?= $phone_number ?>" class="text-decoration-none fs-31 fw-300 text-gradient px-3 font-inter">
+                                    <a href="tel:<?= $phone_number ?>" class="form_phoneBtn text-decoration-none fs-31 fw-300 text-gradient px-3 font-inter">
                                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M21.4131 17.7296L17.1607 15.8405C16.7188 15.6429 16.224 15.5972 15.7534 15.7105C15.2828 15.8237 14.863 16.0896 14.5594 16.4666L13.334 17.9988C11.3248 16.7096 9.61452 15.0057 8.31774 13.0014L9.85 11.7759C10.2266 11.4725 10.4923 11.0529 10.6055 10.5827C10.7188 10.1124 10.6733 9.61793 10.476 9.17627L8.60103 4.91289C8.39033 4.43815 8.01785 4.0537 7.55002 3.8281C7.08219 3.60249 6.54942 3.55041 6.04676 3.68114L2.44698 4.62021C1.92474 4.75534 1.47069 5.07836 1.1718 5.52743C0.872901 5.9765 0.750162 6.52004 0.827085 7.05397C1.49765 11.7098 3.65816 16.0233 6.98518 19.3486C10.3122 22.674 14.6268 24.8323 19.283 25.5005C19.8166 25.576 20.3593 25.4522 20.8074 25.1528C21.2556 24.8534 21.5776 24.3993 21.712 23.8774L22.6511 20.2777C22.7817 19.7751 22.7288 19.2424 22.5019 18.7754C22.275 18.3084 21.8889 17.9376 21.4131 17.7296Z" fill="url(#paint0_linear_221_191)" />
                                             <path d="M19.5871 0.480481C18.5324 0.478562 17.4945 0.743568 16.5698 1.25082C15.6452 1.75807 14.864 2.49107 14.2989 3.38155C13.7338 4.27203 13.4033 5.29102 13.3381 6.34364C13.2729 7.39626 13.4752 8.44825 13.926 9.40166L13.3266 13.0014L16.9264 12.402C17.7755 12.803 18.7039 13.0078 19.6429 13.0013C20.5819 12.9948 21.5074 12.7771 22.3509 12.3644C23.1944 11.9517 23.9343 11.3546 24.5157 10.6172C25.0971 9.87984 25.5052 9.02112 25.7097 8.10464C25.9143 7.18816 25.91 6.2374 25.6973 5.32278C25.4846 4.40817 25.0689 3.55311 24.4809 2.82095C23.8929 2.08879 23.1478 1.49827 22.3006 1.09313C21.4535 0.687989 20.5261 0.478604 19.5871 0.480481Z" fill="url(#paint1_linear_221_191)" />
@@ -81,8 +81,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 px-6">
-                            <div class="text-gradient text-capitalize fs-40 fw-200 lh-1">Let Us make your bathroom<br> Renovation Experience Seamless</div>
+                        <div class="col-lg-6 px-4 px-xxl-6">
+                            <div class="form_heading text-gradient text-capitalize fs-40 fw-200 lh-1">Let Us make your bathroom<br> Renovation Experience Seamless</div>
                             <form action="./src/form" method="POST">
                                 <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                                 <div class="row form_row">
