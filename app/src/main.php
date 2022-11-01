@@ -294,8 +294,7 @@
 <section class="about" id="about">
     <div class="container">
         <div class="row align-items-center justify-content-between gy-md-5">
-            <div class="col-12 d-md-none"><?= renderImg('about-wallpapers-sm.png', 'lib', 'w-100') ?></div>
-            <div class="col-lg-6 col-xl-5 order-md-last order-lg-first">
+            <div class="col-lg-6 col-xl-5 order-md-last order-first">
                 <div class="hero_heading fs-70 fw-300 lh-1 pb-2">A team that delivers unparalleled and unmatched quality</div>
                 <div class="py-4 lh-1_875">
                     <p class="pb-lg-4">Let Modluxe Bathrooms take you on a journey of bringing your vision to a reality. Bathrooms are one of the most important rooms where workmanship should be held to the highest standards.</p>
@@ -314,7 +313,66 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-none d-md-block order-lg-last order-md-first"><?= renderImg('about-wallpapers.png', 'lib') ?></div>
+            <div class="col-lg-6 order-last order-md-first">
+                <div class="about-slider-wrapper my-3 my-xl-0 py-1 py-xl-0">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="about-slider" id="about-slider-1">
+                                <div><?= renderImg("about-9.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-11.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-13.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-6.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-5.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-7.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-12.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-1.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-10.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-8.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-14.jpg", "lib") ?></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="about-slider" id="about-slider-2">
+                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-5.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-14.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-1.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-6.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-7.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-12.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-8.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-13.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-9.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-10.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-11.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 d-none d-md-block">
+                            <div class="about-slider" id="about-slider-3">
+                                <div><?= renderImg("about-1.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-2.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-3.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-4.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-5.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-6.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-7.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-8.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-9.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-10.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-11.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-12.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-13.jpg", "lib") ?></div>
+                                <div><?= renderImg("about-14.jpg", "lib") ?></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

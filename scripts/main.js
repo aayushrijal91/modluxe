@@ -21,7 +21,35 @@ $(() => {
           prevArrow: false,
           nextArrow: e.parent().find('.nextArrow'),
       });
-    })
+    });
+
+    $("#about-slider-1").slick({
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false,
+        vertical: true,
+        centerPadding: '220px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+    });
+    $("#about-slider-2").slick({
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false,
+        vertical: true,
+        centerPadding: '220px',
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
+    $("#about-slider-3").slick({
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false,
+        vertical: true,
+        centerPadding: '220px',
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 })
 
 $(window).on('scroll', () => {
