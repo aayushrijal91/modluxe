@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
+        $suburb = $_POST['suburb'];
         $comment = $_POST['message'];
         $portfolio_copy = $_POST['portfolio_copy'];
 
@@ -57,6 +58,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<tr>' .
             '<td>Email Address</td>' .
             '<td><b>' . strip_tags($email) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Suburb</td>' .
+            '<td><b>' . strip_tags($suburb) . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>Message</td>' .
