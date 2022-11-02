@@ -3,10 +3,10 @@ include __DIR__ . '/env.php';
 
 $site = "Modluxe Bathrooms";
 $phone_number = "1300 011 139";
-$admin_email = 'arijal@aiims.com.au';
-$bcc_email = "";
+$admin_email = 'admin@modluxe.com.au, info@modluxe.com.au';
+$bcc_email = "ray@modluxe.com.au, kalbassit@aiims.com.au, jayoub@aiims.com.au";
 $instagram = "https://www.instagram.com/modluxebathrooms/";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@modluxe.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

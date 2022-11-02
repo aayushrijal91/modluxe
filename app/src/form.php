@@ -10,13 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
     try {
         if ($recaptcha->score < 0.5) {
-            throw new Exception('Low Score');
+            throw new Exception('Low Score. Please try resubmitting the form again');
         }
 
         $to = $admin_email;
-        $email = $to;
-
         $subject = "Message from " . $site;
+        $subject_2 = $site . " Portfolio - Thank You For Your Enquiry";
 
         $name = $_POST['name'];
         $phone = $_POST['phone'];
@@ -69,37 +68,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '</tr>' .
             '</tbody></table></body></html>';
 
-        $headers = "MIME-Version: 1.0\r\n" .
+        $headers_1 = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
-            "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
-            // "Bcc: " . $bcc_email . "\r\n" .
-            "Reply-To: " . $site . " <" . $email . ">" . "\r\n" .
+            "From: " . $site . " <" . $email . ">\r\n" .
+            "Bcc: " . $bcc_email . "\r\n" .
+            "Reply-To: " . $no_reply_email . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
-        $result = mail($to, $subject, $message, $headers);
 
-        $dest_path = './../assets/uploads/ModluxePortfolio_A4_Sep2022.pdf';
+        $message_2 = '<!DOCTYPE html><html><body>' .
+            'Thank you for your enquiry<br><br>' .
+            'Please see our attached portfolio.<br><br>' .
+            'Our team will be in contact with you shortly.<br><br>' .
+            $site . ' Team<br><br>' .
+            '<img src="https://modluxe.com.au/assets/images/logo/email-logo.png" alt="Modluxe">';
+
+        $semi_rand = md5(time());
+        $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+        $headers_2 = "From: " . $site . " <" . $no_reply_email . ">\r\n" .
+            "MIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+        $messagea = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+            "Content-Transfer-Encoding: 7bit\n\n" . $message_2 . "\n\n";
 
         global $mime_boundary, $messagea;
 
-        if ($portfolio_copy) {
-            $portfolio_headers = "MIME-Version: 1.0\r\n" .
-                "Content-type: text/html; charset=utf-8\r\n" .
-                "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
-                "X-Mailer: PHP/" . phpversion();
+        if (isset($portfolio_copy)) {
+            $dest_path = './../assets/uploads/ModluxePortfolio_A4_Sep2022.pdf';
 
             $messagea .= "--{$mime_boundary}\n";
             $fp =    @fopen($dest_path, "rb");
             $data =  @fread($fp, filesize($dest_path));
             @fclose($fp);
             $data = chunk_split(base64_encode($data));
-
             $messagea .= "Content-Type: application/octet-stream; name=\"" . basename($dest_path) . "\"\n" .
                 "Content-Description: " . basename($dest_path) . "\n" .
                 "Content-Disposition: attachment;\n" . " filename=\"" . basename($dest_path) . "\"; size=" . filesize($dest_path) . ";\n" .
                 "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+            $messagea .= "--{$mime_boundary}--";
 
-            mail($email, $subject, $messagea, $portfolio_headers);
+            mail($email, $subject_2, $messagea, $headers_2);
         }
+
+        $result = mail($to, $subject, $message, $headers_1);
 
         if ($result) {
             header('location:./../thankyou');
