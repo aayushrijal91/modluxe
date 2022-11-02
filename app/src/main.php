@@ -12,7 +12,7 @@
                 <div class="container-fluid">
                     <div class="row align-items-center gy-4">
                         <div class="col-lg-6 px-4 px-xxl-6">
-                            <div class="text-center pb-3"><?= renderImg('brook.png', 'lib', 'dp') ?></div>
+                            <div class="text-center pb-3"><?= renderImg('brooke.jpg', 'lib', 'dp') ?></div>
                             <div class="hero_heading text-center text-gradient fs-116 font-playlist">Meet Brooke</div>
                             <div class="sub_heading fs-70 text-gradient fw-200 lh-1 text-center pt-3 pb-4">Your Bathroom Stylist</div>
                             <div class="row justify-content-center align-items-center gx-3">
@@ -435,9 +435,6 @@
                 </div>
                 <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
-                        <div><?= renderImg('traditional-1.jpg', 'lib') ?></div>
-                        <div><?= renderImg('traditional-2.jpg', 'lib') ?></div>
-                        <div><?= renderImg('traditional-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-4.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-5.jpg', 'lib') ?></div>
                         <div><?= renderImg('traditional-6.jpg', 'lib') ?></div>

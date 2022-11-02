@@ -33,8 +33,16 @@
                 @include media-breakpoint-down(sm) {
                     padding: 20px 0;
 
-                    .dp {
+                }
+
+                .dp {
+                    max-height: 168px;
+                    max-width: 168px;
+                    border-radius: 50%;
+
+                    @include media-breakpoint-down(sm) {
                         max-width: 71px;
+                        max-height: 71px;
                     }
                 }
 
