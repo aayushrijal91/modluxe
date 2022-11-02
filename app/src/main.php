@@ -378,7 +378,6 @@
                     <div class="portfolio-slider">
                         <div><?= renderImg('modern-1.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-2.jpg', 'lib') ?></div>
-                        <div><?= renderImg('modern-3.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-4.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-5.jpg', 'lib') ?></div>
                         <div><?= renderImg('modern-6.jpg', 'lib') ?></div>
@@ -386,6 +385,40 @@
                         <div><?= renderImg('modern-8.jpg', 'lib') ?></div>
                     </div>
                     <div class="nextArrow" id="arrow1">
+                        <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M74.5073 6.50707C74.7873 6.22702 74.7873 5.77298 74.5073 5.49293L69.9436 0.9293C69.6636 0.649253 69.2096 0.649253 68.9295 0.9293C68.6495 1.20935 68.6495 1.66339 68.9295 1.94344L72.9861 6L68.9295 10.0566C68.6495 10.3366 68.6495 10.7907 68.9295 11.0707C69.2096 11.3507 69.6636 11.3507 69.9436 11.0707L74.5073 6.50707ZM0.855469 6.71711H74.0002V5.28289H0.855469V6.71711Z" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-card mt-4 mt-md-5">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-6 order-last order-lg-first overflow-hidden">
+                    <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
+                        <div class="text-gradient font-playlist fs-66 pb-2">Classic</div>
+                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">Typically most leave the bathrooms till last in a home renovation. Having a traditional bathroom renovation allows your new bathroom to flow perfectly.</div>
+                        <div class="row align-items-center gx-2 gx-md-4 main_row">
+                            <div class="col-auto">
+                                <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
+                                    <span class="pe-3">Book A Consultation</span> <svg width="33" height="12" viewBox="0 0 33 12" fill="#FDF18C" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.7343 6.87102C33.0305 6.57483 33.0305 6.09461 32.7343 5.79841L27.9076 0.971697C27.6114 0.675505 27.1312 0.675505 26.835 0.971697C26.5388 1.26789 26.5388 1.74811 26.835 2.0443L31.1254 6.33472L26.835 10.6251C26.5388 10.9213 26.5388 11.4015 26.835 11.6977C27.1312 11.9939 27.6114 11.9939 27.9076 11.6977L32.7343 6.87102ZM0.693359 7.09316L32.198 7.09316V5.57627L0.693359 5.57627L0.693359 7.09316Z" fill="#FDF18C" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div class="gradient-divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative order-first order-lg-last">
+                    <div class="portfolio-slider">
+                        <div><?= renderImg('classic-1.jpg', 'lib') ?></div>
+                        <div><?= renderImg('classic-2.jpg', 'lib') ?></div>
+                        <div><?= renderImg('classic-3.jpg', 'lib') ?></div>
+                    </div>
+                    <div class="nextArrow">
                         <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M74.5073 6.50707C74.7873 6.22702 74.7873 5.77298 74.5073 5.49293L69.9436 0.9293C69.6636 0.649253 69.2096 0.649253 68.9295 0.9293C68.6495 1.20935 68.6495 1.66339 68.9295 1.94344L72.9861 6L68.9295 10.0566C68.6495 10.3366 68.6495 10.7907 68.9295 11.0707C69.2096 11.3507 69.6636 11.3507 69.9436 11.0707L74.5073 6.50707ZM0.855469 6.71711H74.0002V5.28289H0.855469V6.71711Z" fill="white" />
                         </svg>
