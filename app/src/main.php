@@ -241,7 +241,7 @@
             <div class="row gy-3 gy-md-5">
                 <div class="col-lg-6 text-center">
                     <div class="font-playlist text-gradient fs-40">Services we specialise in</div>
-                    <div class="px-3 px-md-0">
+                    <div class="px-3 px-md-0 text-capitalize">
                         Bathroom Renovation
                         <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
@@ -259,7 +259,7 @@
                 </div>
                 <div class="col-lg-6 text-center">
                     <div class="font-playlist text-gradient fs-40">Styles we love but not limited to</div>
-                    <div class="px-4 px-md-0">
+                    <div class="px-4 px-md-0 text-capitalize">
                         The Classic Bathroom
                         <span class="px-1"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3.50008" cy="3.67141" r="2.73543" fill="white" />
@@ -383,8 +383,8 @@
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
-                        <div class="text-gradient font-playlist fs-66 pb-2">Classic</div>
-                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">For those who want a more classic or timeless style the traditional design could be a more suitable choice. Using a more neutral colour pallette and natural materials such as wood for cabinets and vanities, this style invites warmth and charm at the same time. Call our consultants at Modluxe today!</div>
+                        <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
+                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance, a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
                         <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
@@ -401,9 +401,10 @@
                 </div>
                 <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
-                        <div><?= renderImg('classic-1.jpg', 'lib') ?></div>
-                        <div><?= renderImg('classic-2.jpg', 'lib') ?></div>
-                        <div><?= renderImg('classic-3.jpg', 'lib') ?></div>
+                        <div><?= renderImg('designer-1.jpg', 'lib') ?></div>
+                        <div><?= renderImg('designer-2.jpg', 'lib') ?></div>
+                        <div><?= renderImg('designer-3.jpg', 'lib') ?></div>
+                        <div><?= renderImg('designer-4.jpg', 'lib') ?></div>
                     </div>
                     <div class="nextArrow">
                         <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -452,8 +453,8 @@
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-6 order-last order-lg-first overflow-hidden">
                     <div class="py-3 py-md-5 py-lg-3 px-md-4 px-xl-7">
-                        <div class="text-gradient font-playlist fs-66 pb-2">Designer</div>
-                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">A true luxury or high end bathroom can create an oasis within your home. For those willing to go the distance, a Designer Bathroom can be a worthy investment. With 15 years in building and construction, Modluxe Bathrooms can provide full support to ensure that you come out the other side with your bathroom looking better than ever!</div>
+                        <div class="text-gradient font-playlist fs-66 pb-2">Classic</div>
+                        <div class="fw-300 lh-1_875 pt-3 pb-4 pt-md-4 pb-md-6">For those who want a more classic or timeless style the traditional design could be a more suitable choice. Using a more neutral colour pallette and natural materials such as wood for cabinets and vanities, this style invites warmth and charm at the same time. Call our consultants at Modluxe today!</div>
                         <div class="row align-items-center gx-2 gx-md-4 main_row">
                             <div class="col-auto">
                                 <a href="#form" data-bs-toggle="modal" role="button" class="btn border-secondary text-secondary rounded-pill px-4">
@@ -470,10 +471,8 @@
                 </div>
                 <div class="col-lg-6 position-relative order-first order-lg-last">
                     <div class="portfolio-slider">
-                        <div><?= renderImg('designer-1.jpg', 'lib') ?></div>
-                        <div><?= renderImg('designer-2.jpg', 'lib') ?></div>
-                        <div><?= renderImg('designer-3.jpg', 'lib') ?></div>
-                        <div><?= renderImg('designer-4.jpg', 'lib') ?></div>
+                        <div><?= renderImg('classic-2.jpg', 'lib') ?></div>
+                        <div><?= renderImg('classic-3.jpg', 'lib') ?></div>
                     </div>
                     <div class="nextArrow">
                         <svg width="75" height="12" viewBox="0 0 75 12" fill="none" xmlns="http://www.w3.org/2000/svg">
